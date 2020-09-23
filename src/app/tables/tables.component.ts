@@ -13,7 +13,7 @@ export interface PeriodicElement {
 }
 
 
-
+let month="january"
 
 @Component({
   selector: 'app-tables',
@@ -21,6 +21,7 @@ export interface PeriodicElement {
   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent implements AfterViewInit ,OnInit{
+  month="january"
   ELEMENT_DATA: posts[]= [];
 
 constructor (private exps:ExpensesService){
@@ -28,6 +29,7 @@ constructor (private exps:ExpensesService){
 }
 ngOnInit(): void {
  this.get();
+
 
 }
 get(){
