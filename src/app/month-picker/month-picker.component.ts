@@ -39,12 +39,15 @@ export class MonthPickerComponent {
     ctrlValue.year(normalizedYear.year());
     this.date.setValue(ctrlValue);
   }
+  
 
   chosenMonthHandler(normalizedMonth: Moment, datepicker: MatDatepicker<Moment>) {
     const ctrlValue = this.date.value;
     ctrlValue.month(normalizedMonth.month());
     this.date.setValue(ctrlValue);
     datepicker.close();
+    var year = 1900+this.date.value._d.getYear()
+    console.log(this.date.value._d.getMonth()+1+"-"+year)
   }
 }
 

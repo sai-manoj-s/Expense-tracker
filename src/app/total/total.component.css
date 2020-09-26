@@ -1,0 +1,18 @@
+.head{
+margin-left: 43%;
+font-size: 3rem;
+font-family: 'Abel', sans-serif;
+font-weight: bolder;
+}
+.val{
+    margin-left: 43%;
+    margin-top: 3%;
+    font-size: 4rem;
+    font-family: 'Abel', sans-serif;
+font-family: 'Dancing Script', cursive;
+}
+.limit{
+    margin-left: 34%;
+    margin-top: 3%;
+    font-size: large;
+}

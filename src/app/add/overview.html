@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>New </h1>
+<div mat-dialog-content>
+  
+
+  <mat-form-field appearance="fill">
+    <mat-label>choose a date</mat-label>
+    <input matInput [matDatepicker]="dp"  [(ngModel)]="data.date" required>
+    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+    <mat-datepicker #dp></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Description</mat-label><br>
+    <input matInput [(ngModel)]="data.desc" required>
+  </mat-form-field>
+  <br>
+ 
+  <mat-form-field>
+    <mat-label>Amount</mat-label><br>
+    <input matInput [(ngModel)]="data.amount" required type="number">
+  </mat-form-field>
+ 
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button class="btn btn-success" [mat-dialog-close] (click)="add(true)" cdkFocusInitial>ADD</button>
+</div>

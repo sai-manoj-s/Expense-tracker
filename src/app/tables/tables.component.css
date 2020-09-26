@@ -1,12 +1,27 @@
 table {
-  width: 100%;
+  width: 60%;
+}
+mat-paginator{
+  width: 60%;
 }
 
 th.mat-sort-header-sorted {
   color: black;
 }
+tr:hover{
+  cursor: pointer;
+  background-color: whitesmoke;
+}
 
 p{
 
   margin-left: 40%;
+}
+app-month-picker{
+  margin-left: 20%;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
 }

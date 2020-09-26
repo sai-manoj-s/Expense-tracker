@@ -1,7 +1,8 @@
 export interface posts {
-  userId: number;
-  id: number;
-  tittle: string;
-  body: string;
+  sno:number;
+  _id: String;
+  date: number;
+  desc: string;
+  amount: string;
 
 }
